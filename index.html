@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime Fan Survey Form</title>
+  <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+  <div id="container">
+    <h1 id="title">Anime Fan Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us understand the preferences of anime fans.</p>
+    <div id="form">
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name-label">Name: <input id="name" name="name-label" type="text" placeholder="Enter your name" required /></label>
+          <label id="email-label" for="email-label">Email: <input id="email" name="email-label" type="email" placeholder="Enter your email" required /></label>
+          <label id="number-label" for="number-label">Age: <input id="number" type="number" name="number" min="13" max="120" placeholder="age" /></label>
+          <label for="dropdown">How long have you been watching anime?
+            <select id="dropdown" name="dropdown">
+              <option value="">Select an option</option>
+              <option value="1">Less than a year</option>
+              <option value="2">1-3 years</option>
+              <option value="3">4-6 years</option>
+              <option value="4">7-10 years</option>
+              <option value="5">More than 10 years</option>
+            </select>
+          </label>
+          <label for="favorite-genre">What is your favorite genre of anime?</label>
+          <label for="action"><input id="action" type="radio" name="favorite-genre" value="Action" /> Action</label>
+          <label for="comedy"><input id="comedy" type="radio" name="favorite-genre" value="Comedy" /> Comedy</label>
+  
+          <label for="dropdown">Which anime streaming platforms do you use? 
+            <select id="dropdown" name="dropdown">
+              <option value="">Select an option</option>
+              <option value="1">Crunchyroll</option>
+              <option value="2">Funimation</option>
+              <option value="3">Netflix</option>
+              <option value="4">Hulu</option>
+              <option value="5">Others (please specify)</option>
+            </select>
+          </label>
+  <label for="role-protagonist">Preferred Anime Roles (select all that apply)<br>
+  <input id="role-protagonist" type="checkbox" name="preferred-roles[]" value="Protagonist" /> Protagonist<br>
+</label>
+<label for="role-antagonist">
+  <input id="role-antagonist" type="checkbox" name="preferred-roles[]" value="Antagonist" /> Antagonist<br>
+</label>
+
+        </fieldset>
+        <label for="comments">Any comments or suggestions?
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </div>
+</body>
+</html>
